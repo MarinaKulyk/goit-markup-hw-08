@@ -1,0 +1,58 @@
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $social-icon-fill ;
+    @extend %flex-center;
+
+    .team-social-item:hover & {
+    fill:$secondary-titel-color;
+    cursor: pointer;
+}
+}
+.team-social-list,
+.footer-social-list {
+   @extend %flex-center;
+    padding: 0;
+    margin: auto; 
+    width: 206px;
+    height: 44px;   
+}
+.footer-social-list {
+    justify-content: flex-start;
+    margin-top: 20px;
+}   
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $secondary-titel-color;
+}
+
+.team-social-item {
+  @extend %flex-center;
+  @extend %social-item-size;
+  @include transitions (background-color);
+
+&:not(:last-child) {
+    margin-right: 10px;
+}  
+
+&:hover, &:focus {
+    background-color: $akcent-color;
+    cursor: pointer;
+}
+}
+.footer-social-item {
+  @extend %flex-center;
+  @extend %social-item-size;
+  background: rgba(255, 255, 255, 0.1); 
+    @include transitions (background-color);
+
+&:not(:last-child) {
+    margin-right: 10px;
+}
+
+&:hover, &:focus {
+    background-color: $akcent-color;
+    cursor: pointer;
+}
+}

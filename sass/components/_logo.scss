@@ -1,0 +1,17 @@
+/* Логотип */
+.logo,
+.footer-logo-link {
+    font-family: $secondary-font;
+    @include font (bold, 26px, 1.19);
+    letter-spacing: 0.03em;
+    color: $logo-color;
+    }
+.footer-logo-link {
+    color: $secondary-titel-color;
+}
+.web {
+    color: $akcent-color;
+}
+.logo {
+    margin-right: 85px;
+}

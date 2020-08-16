@@ -1,0 +1,88 @@
+/* Подвал */
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+.footer-all{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background-footer-color;
+}
+.footer-nav {
+    margin-right: 58px;
+}
+.footer-logo {
+    margin-bottom: 20px;
+}
+.address-text,
+.footer-mail {
+    @extend %footer-contacts-text;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.footer-contacts {
+    @extend %footer-contacts-text;
+    @extend %transforms;
+    color: $footer-link-color;  
+
+    &:hover, &:focus {
+    color: $akcent-color;
+    cursor: pointer;
+    }
+}
+.social-text,
+.footer-form-name {
+    /* правильно тут мало б бути margin-bottom: 20px;
+    але чомусь не спрацьовує, тому задано margin-top для настурного елементу; */
+    @include font (700, 14px, 1.14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-titel-color;
+}
+.footer-social{
+    margin-right: 78px;
+}
+
+/*Форма подриски*/
+.footer-form input {
+    margin-top: 20px;
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: $background-footer-color;
+
+    &::placeholder {
+    color: $footer-link-color;
+}
+}
+.colortext {
+    color: $footer-link-color;
+}
+.footer-form-button {
+    width: 200px;
+    height: 50px;
+    background: $akcent-color;
+    border: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+.subscribe {
+    @include font (bold, 16px, 1.87);
+    padding-left: 28px;
+    margin-right: 10px;
+    letter-spacing: 0.06em;
+    @extend %flex-center;
+
+    color: $secondary-titel-color;
+}
+.subscribe-icon {
+    width: 20px;
+    height: 20px;
+    fill: $secondary-titel-color;
+    margin-right: 10px;
+}

@@ -1,0 +1,32 @@
+/* Фильтр портфолио */
+.filters-nav {
+   /* width: 611px; */
+    height: 54px;
+    margin-top: 93px;
+    margin-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-link:not(:last-child) {
+    margin-right: 8px;
+}
+.button-name {
+    border: none;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+    @include font (500, 16px, 1.62);
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: $background-team-color;
+    color: $main-titel-color;
+    @include transitions (all);
+    
+&:hover, &:focus {
+    background: $akcent-color;
+    color: $secondary-titel-color;
+    cursor: pointer;
+}
+}

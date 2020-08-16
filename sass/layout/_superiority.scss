@@ -1,0 +1,34 @@
+/* Секция Преимущества */
+.superiority {
+    padding-top: 94px;
+}
+.superiority-item:not(:last-child) {
+  margin-right: 30px;
+}
+.superiority-ikons {
+    width: 270px;
+    height: 120px;
+    background: $background-team-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  
+    @extend %flex-center;
+}
+.superiority-img {
+    width: 70px;
+    height: 70px;
+}
+.superiority-titel {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include font (bold, 14px, 1.14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-titel-color;
+}
+.superiority-text {
+    margin: 0;
+    @include font (normal, 14px, 1.71);
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+}

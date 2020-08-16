@@ -1,0 +1,29 @@
+/* Секция Чем мы занимаемся */
+.work-img {
+    display: block;
+}
+.work-item {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.work-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    @include font (bold, 14px, 1.14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: $secondary-titel-color;
+}

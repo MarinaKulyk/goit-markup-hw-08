@@ -1,0 +1,47 @@
+%transforms {
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%team-text-style {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+%footer-contacts-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+%modal-input-textarea {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+}
+%modal-coment-label {
+    position: absolute;
+    top: 12px;
+    left: 42px;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.01em;
+}
+%social-item-size {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}

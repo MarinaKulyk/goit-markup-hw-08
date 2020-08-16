@@ -1,0 +1,30 @@
+/* Общие стили */
+.html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.page {
+    font-family: $maint-font;
+    background-color: $main-background-color;
+    color: $main-text-color;
+}
+.list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.link {
+    text-decoration: none;
+}
+.section {
+    padding-bottom: 94px;
+}
+.img {
+    display: block;
+}

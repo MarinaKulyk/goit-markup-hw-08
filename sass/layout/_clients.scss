@@ -1,0 +1,33 @@
+/* Секция Клиенты */
+.client {
+    padding-top: 94px;
+}
+ .client-item:not(:last-child) {
+  margin-right: 30px;
+ }
+
+.client-link {
+   @extend %flex-center;
+   @extend %transforms;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover, &:focus {
+        border-color: $akcent-color;
+        cursor: pointer;
+    } 
+}
+.client-icon{
+    fill: #AFB1B8 ;
+    @extend %transforms;
+
+.client-link:hover &,
+.client-link:focus & {
+    fill: $akcent-color;
+    cursor: pointer;
+}
+}
+

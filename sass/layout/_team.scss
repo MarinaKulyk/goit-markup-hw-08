@@ -1,0 +1,36 @@
+/* Секция Команда */
+.team {
+    background-color: $background-team-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-item {
+    background-color: $secondary-titel-color;
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px
+     rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+     &:not(:last-child) {
+         margin-right: 30px;
+     }
+}
+.team-img {
+    margin-bottom: 30px;
+}
+.team-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @extend %team-text-style;
+}
+.team-text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: $main-text-color;
+    @extend %team-text-style;
+}
+
+
+
+
