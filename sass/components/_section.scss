@@ -1,8 +1,13 @@
 /* Имена секций */
+.section {
+    // padding-bottom: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
 .section-titel {
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 50px;
+       padding-bottom: 30px;
+    
     @include font (bold, 36px, 1.16);
     text-align: center;
     letter-spacing: 0.03em;

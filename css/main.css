@@ -6,7 +6,7 @@
 }
 
 .team-social-icon, .team-social-list,
-.footer-social-list, .team-social-item, .footer-social-item, .superiority-ikons, .client-link, .subscribe {
+.footer-social-list, .team-social-item, .footer-social-item, .superiority-ikons, .superiority-titel, .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,10 +82,6 @@
 
 .link {
   text-decoration: none;
-}
-
-.section {
-  padding-bottom: 94px;
 }
 
 .img {
@@ -178,7 +174,7 @@
 
 /* Контейнер */
 .container {
-  width: 1170px;
+  width: 450px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -186,10 +182,14 @@
 }
 
 /* Имена секций */
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .section-titel {
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -203,6 +203,10 @@
   display: flex;
   align-items: center;
   height: 80px;
+}
+
+.container-manu {
+  display: none;
 }
 
 .nav-item {
@@ -225,11 +229,6 @@
   height: 4px;
   border-radius: 2px;
   background-color: #2196F3;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
 }
 
 .nav-link {
@@ -279,12 +278,13 @@
 
 /* Секция Герой */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 480px;
+  max-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero.jpg);
 }
 
@@ -292,8 +292,8 @@
   margin: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -320,15 +320,21 @@
 
 /* Секция Преимущества */
 .superiority {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.superiority-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .superiority-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .superiority-ikons {
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -361,13 +367,11 @@
 }
 
 /* Секция Чем мы занимаемся */
-.work-img {
-  display: block;
+.work {
+  display: none;
 }
 
 .work-item {
-  position: relative;
-  display: inline-block;
   width: 370px;
 }
 
@@ -395,12 +399,19 @@
 
 /* Секция Команда */
 .team {
+  width: 480px;
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .team-item {
+  max-width: 450px;
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
@@ -408,10 +419,12 @@
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-img {
+  width: 450px;
+  max-height: 320px;
   margin-bottom: 30px;
 }
 
@@ -429,15 +442,25 @@
 
 /* Секция Клиенты */
 .client {
-  padding-top: 94px;
+  width: 480px;
 }
 
-.client-item:not(:last-child) {
+.client-item:nth-child(2n+1) {
   margin-right: 30px;
 }
 
+.client-item:nth-child(-n+4) {
+  margin-bottom: 10px;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 .client-link {
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
@@ -461,8 +484,8 @@
 
 /* Подвал */
 .footer {
-  display: flex;
-  align-items: baseline;
+  width: 450px;
+  text-align: center;
 }
 
 .footer-all {
@@ -471,18 +494,18 @@
   background-color: #2F303A;
 }
 
-.footer-nav {
-  margin-right: 58px;
-}
-
 .footer-logo {
   margin-bottom: 20px;
+}
+
+.address {
+  margin-bottom: 60px;
 }
 
 .address-text,
 .footer-mail {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-contacts {
@@ -507,13 +530,13 @@
 }
 
 .footer-social {
-  margin-right: 78px;
+  margin-bottom: 60px;
 }
 
 /*Форма подриски*/
 .footer-form input {
   margin-top: 20px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -536,8 +559,6 @@
   background: #2196F3;
   border: none;
   border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
 }
 
 .subscribe {
@@ -598,14 +619,7 @@
 
 /* Галерея портфолио */
 .project-link {
-  display: block;
   text-decoration: none;
-}
-
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .project-item {

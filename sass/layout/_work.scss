@@ -1,10 +1,13 @@
 /* Секция Чем мы занимаемся */
+.work {
+    display: none;
+}
 .work-img {
-    display: block;
+    // display: block;
 }
 .work-item {
-    position: relative;
-    display: inline-block;
+    // position: relative;
+    // display: inline-block;
     width: 370px;
 
     &:not(:last-child) {

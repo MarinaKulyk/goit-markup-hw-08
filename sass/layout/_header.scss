@@ -4,6 +4,9 @@
     align-items: center;
     height: 80px;
 }
+.container-manu {
+    display: none;
+}
 .nav-item {
     position: relative;
 
@@ -25,8 +28,8 @@
     background-color: $akcent-color;
 }
 .nav {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 .nav-link {
     @include font (500, 14px, 1.14);

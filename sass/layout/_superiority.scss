@@ -1,24 +1,31 @@
 /* Секция Преимущества */
 .superiority {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.superiority-list {
+    display: flex;
+    flex-direction: column;
 }
 .superiority-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .superiority-ikons {
-    width: 270px;
+    max-width: 450px;
     height: 120px;
+    // width: 270px;
+    // height: 120px;
     background: $background-team-color;
     border-radius: 4px;
     margin-bottom: 30px;
-  
-    @extend %flex-center;
-}
+ @extend %flex-center;
+ }
 .superiority-img {
     width: 70px;
     height: 70px;
 }
 .superiority-titel {
+    @extend %flex-center;
     margin-top: 0;
     margin-bottom: 10px;
     @include font (bold, 14px, 1.14);
