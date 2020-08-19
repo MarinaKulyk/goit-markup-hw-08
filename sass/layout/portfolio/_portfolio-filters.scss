@@ -1,14 +1,29 @@
 /* Фильтр портфолио */
 .filters-nav {
    /* width: 611px; */
-    height: 54px;
-    margin-top: 93px;
-    margin-bottom: 34px;
+    // height: 54px;
+    // margin-top: 93px;
+    margin-top: 60px;
+    // margin-bottom: 34px;
     margin-left: auto;
     margin-right: auto;
 }
+.filters-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+}
 .button-link:not(:last-child) {
     margin-right: 8px;
+}
+.button-link:nth-child(-n+3) {
+    margin-bottom: 15px;
+     @media screen and (min-width: 768px) {
+         margin-bottom: 0px;
+     }
 }
 .button-name {
     border: none;

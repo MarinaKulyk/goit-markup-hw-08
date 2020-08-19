@@ -1,24 +1,48 @@
 /* Секция Преимущества */
-.superiority {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 .superiority-list {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+     @media screen and (min-width: 1600px) {
+         flex-wrap: nowrap;
+     }
 }
-.superiority-item:not(:last-child) {
-  margin-bottom: 30px;
+.superiority-item {
+    max-width: 354px;
+    height: 251px;
+     @media screen and (min-width: 1600px) {
+        max-width: 270px;  
+     }
+    &:nth-child(2n+1) {
+    margin-right: 30px;
 }
+
+ @media screen and (min-width: 1600px) {
+     &:not(:last-child) {
+          margin-right: 30px;
+     }
+&:nth-child(-n+2) {
+  margin-bottom: 0px;
+}
+ }
+}
+
 .superiority-ikons {
     max-width: 450px;
     height: 120px;
-    // width: 270px;
-    // height: 120px;
     background: $background-team-color;
     border-radius: 4px;
     margin-bottom: 30px;
  @extend %flex-center;
+  @media screen and (min-width: 768px) {
+      max-width: 354px;
+       @media screen and (min-width: 1600px) {
+           max-width: 270px;
+       }
+  }
  }
 .superiority-img {
     width: 70px;
