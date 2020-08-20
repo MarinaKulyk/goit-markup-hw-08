@@ -569,10 +569,9 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .superiority-item {
     max-width: 270px;
-    height: 251px;
   }
   .superiority-item:not(:last-child) {
     margin-right: 30px;
