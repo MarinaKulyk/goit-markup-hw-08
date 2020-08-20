@@ -50,7 +50,7 @@
 }
 .contacts {
     margin-left: 84px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 305px;
        
     }
@@ -61,7 +61,7 @@
    
     @media screen and (min-width: 768px) {
     display: block;}
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
          display: inline;
           @include font (500, 14px, 1.14);
          &:not(:last-child) {

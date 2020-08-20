@@ -6,7 +6,7 @@
         flex-direction: row;
         flex-wrap: wrap; 
     }
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
          flex-wrap: nowrap;
      }
 }
@@ -16,12 +16,12 @@
     margin-right: 0px;
      
 
- @media screen and (min-width: 767px) and (max-width: 1599px) {
+ @media screen and (min-width: 767px) and (max-width: 1199px) {
         max-width: 354px;  
         &:nth-child(2n+1) {
             margin-right: 30px;
 } 
- @media screen and (min-width: 1600px) {
+ @media screen and (min-width: 1200px) {
     max-width: 270px;
     height: 251px;
    &:not(:last-child) {
@@ -32,16 +32,7 @@
 
 
 }
-//     &:nth-child(2n+1) {
-//     margin-right: 30px;
-// }
 
- 
-// &:nth-child(-n+2) {
-//   margin-bottom: 0px;
-// }
-//  }
-// }
 
 .superiority-ikons {
     max-width: 450px;
@@ -52,7 +43,7 @@
  @extend %flex-center;
   @media screen and (min-width: 768px) {
       max-width: 354px;
-       @media screen and (min-width: 1600px) {
+       @media screen and (min-width: 1200px) {
            max-width: 270px;
        }
   }

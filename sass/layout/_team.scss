@@ -5,7 +5,7 @@
     @media screen and (min-width: 768px) {
  width: 768px;
     }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
  width: 1600px;
 
 }
@@ -17,7 +17,7 @@
          flex-direction: row;
         flex-wrap: wrap; 
      }
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
          flex-wrap: nowrap;
      }
 }
@@ -45,7 +45,7 @@
               margin-bottom: 30px;
          }
      }
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
          max-width: 270px;
          &:not(:last-child) {
          margin-right: 30px;
@@ -64,7 +64,7 @@
     max-width: 354px;
     max-height: 260px;
     }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 max-width: 270px;
 max-height: 260px;
 }  

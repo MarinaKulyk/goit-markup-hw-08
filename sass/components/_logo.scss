@@ -5,7 +5,7 @@
     @include font (bold, 24px, 1.16);
     letter-spacing: 0.03em;
     color: $logo-color;
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
   @include font (bold, 26px, 1.19);
       }
     }
@@ -17,7 +17,7 @@
 }
 .logo {
     margin-right: 81px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-right: 85px;
     }
 

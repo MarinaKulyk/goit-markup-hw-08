@@ -23,13 +23,13 @@
        margin-right: 0;
     }
    
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 352px;
         &:nth-child(2n) {
             margin-right: 0px;
         }
     }
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
          width: 368px;
 &:nth-child(3n) {
     margin-right: 0px;
@@ -52,7 +52,7 @@
      @media screen and (min-width: 768px) {
         width: 352px;
      }
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
          width: 368px;
  }
 }
