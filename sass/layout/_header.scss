@@ -1,44 +1,73 @@
 /* Навигация */
- .header .container {
+ .header {
+     position: relative;
+     max-width: 480px;
+     
+ @media screen and (min-width: 768px) {
+      max-width: 768px;
+ }
+ @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+ }
+
+& .container {
     display: flex;
     align-items: center;
     flex-direction: row;
     height: 80px;
-}
-.container-manu {
-    display: none;
+    border-bottom: 1px solid #ECECEC;
     @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+      border-bottom: none;
+ }
 }
-}
+ }
 .nav-item {
     position: relative;
+    display: block;
     &:not(:last-child) {
-    margin-right: 50px;
-    padding-left: 0;
+        margin-bottom: 40px;
     }
+    @media screen and (min-width: 768px) {
+     display: inline-flex;
+         &:not(:last-child) {
+        margin-right: 50px;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+ }
+    
 }
 .studio::after,
 .portfolio::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -31px;
+    bottom: -12px;
+    
     display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: $akcent-color;
+     @media screen and (min-width: 768px) {
+    bottom: -32px;
+ }
 }
 .nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+     padding-bottom: 60px;
+      @media screen and (min-width: 768px) {
+     padding-bottom: 0px;
+ }
+}
+.nav-list {
+    display: block;
+     @media screen and (min-width: 768px) {
+      display: flex;
+ } 
 }
 .nav-link {
-    @include font (500, 14px, 1.14);
+     @include font (500, 18px, 1.16);
+   
     letter-spacing: 0.02em;
     color: $main-titel-color; 
     @extend %transforms;
@@ -47,20 +76,88 @@
         color: $akcent-color;
         cursor: pointer;
     }
+    @media screen and (min-width: 768px) {
+      @include font (500, 14px, 1.14);
+ }
+}
+.header-mobile {
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// .menu-icons { ????
+//     display: flex;
+// }
+.menu-button {
+    display: inline-flex;
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  
+    &:hover, &:focus {
+    border: none;
+    fill: $akcent-color;
+}    
+    & .icon-cross {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+ }
+}
+.menu-button.is-open {
+    & .icon-cross {
+        display: block;
+    }
+    & .icon-menu {
+        display: none;
+    }
+}
+
+.header-menu {
+ display: none;
+ &.is-open {
+     display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+         padding-top: 60px;
+         padding-bottom: 60px;
+         padding-left: auto;
+         scroll-padding-right: auto;
+
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 480px;
+                  background-color: #ffffff;
+    }              
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 }
 .contacts {
     margin-left: 84px;
     @media screen and (min-width: 1200px) {
         margin-left: 305px;
-       
     }
 }
 .contacts-link {
+     display: block;
     color: $main-text-color;
-    @include font (500, 12px, 1.16);
-   
+      @include font (500, 18px, 1.16);
+    
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
     @media screen and (min-width: 768px) {
-    display: block;}
+     @include font (500, 12px, 1.16);
+}
      @media screen and (min-width: 1200px) {
          display: inline;
           @include font (500, 14px, 1.14);
