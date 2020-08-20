@@ -490,6 +490,12 @@
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .superiority-titel {
+    justify-content: flex-start;
+  }
+}
+
 .superiority-text {
   margin: 0;
   font-weight: normal;
@@ -654,23 +660,19 @@
   }
 }
 
-.client-item:nth-child(2n+1) {
+.client-item:not(:last-child) {
   margin-right: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .client-item:nth-child(2n+1) {
+@media screen and (max-width: 767px) {
+  .client-item:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-.client-item:nth-child(-n+4) {
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .client-item:nth-child(-n+4) {
-    margin-bottom: 0;
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .client-item:nth-child(3n) {
+    margin-right: 0;
   }
 }
 
@@ -699,6 +701,12 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .client-link {
+    width: 170px;
+  }
+}
+
 .client-icon {
   fill: #AFB1B8;
 }
@@ -715,10 +723,26 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1600px) {
+  .footer {
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: start;
+  }
+}
+
 .footer-all {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
+}
+
+@media screen and (min-width: 1600px) {
+  .footer-nav {
+    margin-right: 58px;
+  }
 }
 
 .footer-logo {
@@ -735,6 +759,13 @@
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 1600px) {
+  .address-text,
+  .footer-mail {
+    margin-bottom: 9px;
+  }
+}
+
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -746,8 +777,6 @@
 
 .social-text,
 .footer-form-name {
-  /* правильно тут мало б бути margin-bottom: 20px;
-    але чомусь не спрацьовує, тому задано margin-top для настурного елементу; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -760,7 +789,13 @@
   margin-bottom: 60px;
 }
 
-/*Форма подриски*/
+@media screen and (min-width: 1600px) {
+  .footer-social {
+    margin-right: 78px;
+  }
+}
+
+/*Форма подписки*/
 .footer-form input {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -770,6 +805,12 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2F303A;
+}
+
+@media screen and (min-width: 1600px) {
+  .footer-form input {
+    margin-right: 12px;
+  }
 }
 
 .footer-form input::placeholder {
@@ -788,6 +829,13 @@
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1600px) {
+  .footer-form-button {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
 .subscribe {
   font-weight: bold;
   font-size: 16px;
@@ -796,6 +844,14 @@
   margin-right: 10px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1600px) {
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .subscribe-icon {
@@ -886,14 +942,22 @@
   height: 402px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
+  margin-right: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .project-item {
+    max-width: 450px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .project-item {
     width: 352px;
   }
-  .project-item:nth-child(2n+1) {
-    margin-right: 30px;
+  .project-item:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
@@ -901,7 +965,7 @@
   .project-item {
     width: 368px;
   }
-  .project-item:nth-child(2n+1) {
+  .project-item:nth-child(3n) {
     margin-right: 0px;
   }
 }

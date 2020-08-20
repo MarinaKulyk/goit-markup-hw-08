@@ -8,32 +8,22 @@
  width: 1600px;
 }
 }
-
 .client-item {
-&:nth-child(2n+1) {
-    margin-right: 30px;  
-    @media screen and (min-width: 768px) {
-        margin-right: 0;
+    &:not(:last-child) {
+       margin-right: 30px;
     }
-}
-&:nth-child(-n+4) {
-    margin-bottom: 10px;
-     @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-}
-}
-// ???? Відступи для 768рх і 1600рх??????
 
-// &:not(3n+1) {
-// @media screen and (min-width: 768px){
-//  margin-right: 30px;
-// }    
-// }
+@media screen and (max-width: 767px) {
+&:nth-child(2n) {
+    margin-right: 0;
 }
-
-//  .client-item:not(:last-child) {
-//   margin-right: 30px;
-//  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  &:nth-child(3n) {
+    margin-right: 0;
+}
+}
+}
 
 .client-list {
     display: flex;
@@ -44,7 +34,7 @@
 @extend %flex-center;
    @extend %transforms;
    width: 210px;
-    // width: 170px;
+  
     height: 90px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
@@ -55,9 +45,12 @@
         cursor: pointer;
     } 
     @media screen and (min-width: 768px) {
-        width: 226px;
-
+        width: 226px; 
     }
+      @media screen and (min-width: 1600px) {
+width: 170px;
+      }
+
 }
 .client-icon{
     fill: #AFB1B8 ;
