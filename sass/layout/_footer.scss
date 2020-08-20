@@ -1,9 +1,14 @@
 /* Подвал */
 .footer  {
- width: 450px;
+ max-width: 450px;
  text-align: center;
+ 
+ @media screen and (min-width: 768px) {
+     max-width: 768px;
+ }
+
 @media screen and (min-width: 1600px) {
-width: 1170px;
+max-width: 1170px;
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
@@ -18,8 +23,7 @@ text-align: start;
 .footer-nav {
      @media screen and (min-width: 1600px) {
   margin-right: 58px;
-     }
-   
+     } 
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -62,6 +66,7 @@ margin-bottom: 60px;
 }
 
 /*Форма подписки*/
+
 .footer-form input {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -71,8 +76,6 @@ margin-bottom: 60px;
 @media screen and (min-width: 1600px) {
   margin-right: 12px;
      }
-
-
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: $background-footer-color;
@@ -84,12 +87,18 @@ margin-bottom: 60px;
 .colortext {
     color: $footer-link-color;
 }
+
 .footer-form-button {
     width: 200px;
     height: 50px;
     background: $akcent-color;
     border: none;
     border-radius: 4px;
+     @media screen and (min-width: 768px) {
+    display: flex;
+    
+     }
+
      @media screen and (min-width: 1600px) {
     display: inline-flex;
     align-items: center;

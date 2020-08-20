@@ -1,12 +1,13 @@
 /* Секция Команда */
 .team {
-    width: 480px;
+       width: 480px;
     background-color: $background-team-color;
     @media screen and (min-width: 768px) {
  width: 768px;
     }
 @media screen and (min-width: 1600px) {
  width: 1600px;
+
 }
 }
 .team-list {
