@@ -1,14 +1,7 @@
 /* Секция Команда */
 .team {
-       width: 480px;
+    width: 100%;
     background-color: $background-team-color;
-    @media screen and (min-width: 768px) {
- width: 768px;
-    }
-@media screen and (min-width: 1200px) {
- width: 1600px;
-
-}
 }
 .team-list {
     display: flex;
@@ -74,7 +67,6 @@ max-height: 260px;
     margin-bottom: 10px;
     @extend %team-text-style;
 }
-
 .team-text {
     margin-top: 0;
     margin-bottom: 16px;

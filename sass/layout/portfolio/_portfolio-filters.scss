@@ -1,12 +1,17 @@
 /* Фильтр портфолио */
 .filters-nav {
    /* width: 611px; */
-    // height: 54px;
-    // margin-top: 93px;
+    
     margin-top: 60px;
-    // margin-bottom: 34px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+         margin-bottom: 0px;
+         height: 54px;
+    margin-top: 93px;
+    margin-bottom: 34px;
+     }
 }
 .filters-button {
     display: flex;

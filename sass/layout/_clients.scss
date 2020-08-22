@@ -1,18 +1,8 @@
 /* Секция Клиенты */
-.client {
-    width: 480px;
-     @media screen and (min-width: 768px) {
- width: 768px;
-    }
-@media screen and (min-width: 1200px) {
- width: 1600px;
-}
-}
 .client-item {
     &:not(:last-child) {
        margin-right: 30px;
     }
-
 @media screen and (max-width: 767px) {
 &:nth-child(2n) {
     margin-right: 0;
@@ -30,7 +20,6 @@
 }
 }
 }
-
 .client-list {
     display: flex;
     flex-wrap: wrap;

@@ -1,14 +1,8 @@
 /* Подвал */
 .footer  {
- max-width: 450px;
  text-align: center;
- 
- @media screen and (min-width: 768px) {
-     max-width: 768px;
- }
 
 @media screen and (min-width: 1200px) {
-max-width: 1170px;
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
@@ -66,7 +60,12 @@ margin-bottom: 60px;
 }
 
 /*Форма подписки*/
-
+// .footer-form {
+//     display: flex;
+//     flex-direction: column;
+//  margin-left: auto;
+//  margin-right: auto;
+// }
 .footer-form input {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -96,8 +95,9 @@ margin-bottom: 60px;
     border-radius: 4px;
      @media screen and (min-width: 768px) {
     display: flex;
-    
-     }
+    margin-left: auto;
+  margin-right: auto;
+         }
 
      @media screen and (min-width: 1200px) {
     display: inline-flex;

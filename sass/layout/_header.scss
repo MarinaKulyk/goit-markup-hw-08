@@ -2,12 +2,13 @@
  .header {
      position: relative;
      max-width: 480px;
-     
+    margin-left: auto;
+    margin-right: auto;
  @media screen and (min-width: 768px) {
       max-width: 768px;
  }
  @media screen and (min-width: 1200px) {
-      max-width: 1600px;
+      max-width: 1200px;
  }
 
 & .container {
@@ -40,7 +41,7 @@
 .studio::after,
 .portfolio::after {
     content: "";
-    position: absolute;
+       position: absolute;
     left: 0;
     bottom: -12px;
     
@@ -81,14 +82,18 @@
  }
 }
 .header-mobile {
-    max-width: 450px;
+    width: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        width: 222px;
+    }
+     @media screen and (min-width: 1200px) {
+        width: 238px;
+    }
 }
-// .menu-icons { ????
-//     display: flex;
-// }
+
 .menu-button {
     display: inline-flex;
     
@@ -142,11 +147,13 @@
 }
 }
 .contacts {
-    margin-left: 84px;
+     @media screen and (min-width: 768px) {
+        margin-left: 84px;
+    }
     @media screen and (min-width: 1200px) {
         margin-left: 305px;
     }
-}
+ }
 .contacts-link {
      display: block;
     color: $main-text-color;
