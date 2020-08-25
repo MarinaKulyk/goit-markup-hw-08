@@ -2,6 +2,15 @@
 .footer  {
  text-align: center;
 
+ @media screen and (min-width: 768px) {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+// flex-direction: row;
+// justify-content: flex-start;
+// text-align: start;
+      }
+
 @media screen and (min-width: 1200px) {
 display: flex;
 flex-direction: row;
@@ -15,6 +24,9 @@ text-align: start;
     background-color: $background-footer-color;
 }
 .footer-nav {
+     @media screen and (min-width: 768px) {
+         margin-right: 165px;
+     }
      @media screen and (min-width: 1200px) {
   margin-right: 58px;
      } 
@@ -24,6 +36,8 @@ text-align: start;
 }
 .address {
     margin-bottom: 60px;
+
+    
 }
 .address-text,
 .footer-mail {
@@ -59,13 +73,6 @@ margin-bottom: 60px;
      }
 }
 
-/*Форма подписки*/
-// .footer-form {
-//     display: flex;
-//     flex-direction: column;
-//  margin-left: auto;
-//  margin-right: auto;
-// }
 .footer-form input {
     margin-top: 20px;
     margin-bottom: 20px;
