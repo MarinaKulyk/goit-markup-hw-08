@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+.team-name, .team-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .modal-form input, .modal-form textarea {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -609,6 +618,102 @@
 }
 
 /* Секция Команда */
+.team {
+  max-width: 100%;
+  background-color: #F5F4FA;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.team-item {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-item {
+    max-width: 354px;
+  }
+  .team-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .team-item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    max-width: 270px;
+  }
+  .team-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .team-item:nth-child(-n+2) {
+    margin-bottom: 0px;
+  }
+}
+
+.team-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-img {
+    max-width: 450px;
+    max-height: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-img {
+    max-width: 354px;
+    max-height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-img {
+    max-width: 270px;
+    max-height: 260px;
+  }
+}
+
+.team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: #757575;
+}
+
 /* Секция Клиенты */
 /* Подвал */
 /* Фильтр портфолио */
