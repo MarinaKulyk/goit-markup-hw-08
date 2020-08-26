@@ -1,35 +1,35 @@
 /* Секция Преимущества */
-// .superiority-list {
-//     display: flex;
-//     flex-direction: column;
-//        @media screen and (min-width: 768px) {
-//         flex-direction: row;
-//         flex-wrap: wrap; 
-//     }
-//      @media screen and (min-width: 1200px) {
-//          flex-wrap: nowrap;
-//      }
-// }
+.superiority-list {
+       @media screen and (min-width: 768px) {
+           display: flex;
+             flex-wrap: wrap; 
+    }
+}
 .superiority-item {
     max-width: 100%;
     margin-right: 0px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+     @media screen and (min-width: 768px) {
+    // width: calc((100%-2*30px)/2); 
+    width: 354px;
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }  
+    }
+    @media screen and (min-width: 1200px) {
+    //   width:calc((100%-4*30px)/4);
+    width: 270px;
+       &:not(:last-child) {
+        margin-right: 30px;
+   }
+ }
 }
-//  @media screen and (min-width: 767px) and (max-width: 1199px) {
-//         max-width: 354px;  
-//         &:nth-child(2n+1) {
-//             margin-right: 30px;
-//         &:nth-child(-n+2) {
-//             margin-bottom: 30px;
-//         }    
-// } 
-//  }
-//  @media screen and (min-width: 1200px) {
-//     max-width: 270px;
-//    &:not(:last-child) {
-//         margin-right: 30px;
-//    }
-//   }  
-// }
+
 .superiority-ikons {
     max-width: 100%;
     height: 120px;

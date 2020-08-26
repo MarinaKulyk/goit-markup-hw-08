@@ -6,7 +6,7 @@
 }
 
 .team-social-icon, .team-social-list,
-.footer-social-list, .team-social-item, .footer-social-item, .superiority-titel {
+.footer-social-list, .team-social-item, .footer-social-item, .superiority-ikons, .superiority-titel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,6 +487,51 @@
 }
 
 /* Секция Преимущества */
+@media screen and (min-width: 768px) {
+  .superiority-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.superiority-item {
+  max-width: 100%;
+  margin-right: 0px;
+}
+
+.superiority-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .superiority-item {
+    width: 354px;
+  }
+  .superiority-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .superiority-item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .superiority-item {
+    width: 270px;
+  }
+  .superiority-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.superiority-ikons {
+  max-width: 100%;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .superiority-img {
   width: 70px;
   height: 70px;
