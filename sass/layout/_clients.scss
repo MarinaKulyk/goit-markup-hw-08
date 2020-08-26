@@ -1,60 +1,60 @@
 /* Секция Клиенты */
-.client-item {
-    &:not(:last-child) {
-       margin-right: 30px;
-    }
-@media screen and (max-width: 767px) {
-&:nth-child(2n) {
-    margin-right: 0;
-}
-&:nth-child(-n+4) {
-    margin-bottom: 30px;
-}
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  &:nth-child(3n) {
-    margin-right: 0;
-}
-&:nth-child(-n+3) {
-    margin-bottom: 30px;
-}
-}
-}
-.client-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-.client-link {
-@extend %flex-center;
-   @extend %transforms;
-   width: 210px;
+// .client-item {
+//     &:not(:last-child) {
+//        margin-right: 30px;
+//     }
+// @media screen and (max-width: 767px) {
+// &:nth-child(2n) {
+//     margin-right: 0;
+// }
+// &:nth-child(-n+4) {
+//     margin-bottom: 30px;
+// }
+// }
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   &:nth-child(3n) {
+//     margin-right: 0;
+// }
+// &:nth-child(-n+3) {
+//     margin-bottom: 30px;
+// }
+// }
+// }
+// .client-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+// }
+// .client-link {
+// @extend %flex-center;
+//    @extend %transforms;
+//    width: 210px;
   
-    height: 90px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
+//     height: 90px;
+//     border: 1px solid #AFB1B8;
+//     box-sizing: border-box;
+//     border-radius: 4px;
 
-    &:hover, &:focus {
-        border-color: $akcent-color;
-        cursor: pointer;
-    } 
-    @media screen and (min-width: 768px) {
-        width: 226px; 
-    }
-      @media screen and (min-width: 1200px) {
-width: 170px;
-      }
+//     &:hover, &:focus {
+//         border-color: $akcent-color;
+//         cursor: pointer;
+//     } 
+//     @media screen and (min-width: 768px) {
+//         width: 226px; 
+//     }
+//       @media screen and (min-width: 1200px) {
+// width: 170px;
+//       }
 
-}
-.client-icon{
-    fill: #AFB1B8 ;
-    @extend %transforms;
+// }
+// .client-icon{
+//     fill: #AFB1B8 ;
+//     @extend %transforms;
 
-.client-link:hover &,
-.client-link:focus & {
-    fill: $akcent-color;
-    cursor: pointer;
-}
-}
+// .client-link:hover &,
+// .client-link:focus & {
+//     fill: $akcent-color;
+//     cursor: pointer;
+// }
+// }
 
