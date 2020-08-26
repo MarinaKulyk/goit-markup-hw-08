@@ -1,19 +1,14 @@
 /* Секция Команда */
 .team {
-    max-width: 100%;
+    // max-width: 100%;
     background-color: $background-team-color; 
 }
 .team-list {
-    // display: flex;
-    // flex-direction: column;
      @media screen and (min-width: 768px) {
          display: flex;
          flex-direction: row;
         flex-wrap: wrap; 
      }
-    //  @media screen and (min-width: 1200px) {
-    //      flex-wrap: nowrap;
-    //  }
 }
 .team-item {
     width: 100%;
@@ -26,12 +21,9 @@
          &:not(:last-child) {
      margin-bottom: 30px;
      }
- @media screen and (min-width: 480px) {
-  
-     width: 450px;
-     }
      @media screen and (min-width: 768px) {
-         max-width: 354px;
+         width: calc((100% - 30px)/2); 
+       
          &:nth-child(2n+1) {
               margin-right: 30px;
          }
@@ -43,7 +35,8 @@
          }
      }
      @media screen and (min-width: 1200px) {
-        max-width: 270px;
+width: calc((100% - 90px)/4); 
+        
          &:not(:last-child) {
          margin-right: 30px;
          }
@@ -58,15 +51,12 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 480px) {
-    max-width: 450px;
     max-height: 320px;
     }
     @media screen and (min-width: 768px) {
-    max-width: 354px;
     max-height: 260px;
     }
 @media screen and (min-width: 1200px) {
-max-width: 270px;
 max-height: 260px;
 }  
 }

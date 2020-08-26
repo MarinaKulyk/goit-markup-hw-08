@@ -45,7 +45,6 @@
  }
 }
 .nav-item {
-    position: relative;
     display: block;
     &:not(:last-child) {
         margin-bottom: 40px;
@@ -60,6 +59,7 @@
  }   
 }
 .nav-link {
+    position: relative;
      @include font (500, 18px, 1.16);
    
     letter-spacing: 0.02em;

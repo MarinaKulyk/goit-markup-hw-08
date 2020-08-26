@@ -6,19 +6,24 @@
          display: flex;
          text-align: center;
      }
-
 }
-.work-img {
-    display: block;
+.work-list {
+    display:flex;
+    flex-wrap: nowrap;
+
 }
 .work-item {
     position: relative;
     display: inline-block;
-    width: 370px;
+ 
 
     &:not(:last-child) {
         margin-right: 30px;
     }
+}
+.work-img {
+    display: inline-block;
+    width: 370px;
 }
 .work-text {
     position: absolute;
