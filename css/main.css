@@ -447,24 +447,24 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(./images/hero/Hero1xtablet.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Hero1xtablet.jpg);
 }
 
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(./images/hero/Hero2хmobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Hero2хmobile.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(./images/hero/Hero1xtablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Hero1xtablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(./images/hero/Hero2xtablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Hero2xtablet.jpg);
   }
 }
 
@@ -472,13 +472,13 @@
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(./images/hero/Hero1xdesktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Hero1xdesktop.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(./images/hero/Hero2xdesktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Hero2xdesktop.jpg);
   }
 }
 
@@ -1054,7 +1054,6 @@
 
 .project-item {
   width: 100%;
-  height: 402px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   margin-right: 30px;
@@ -1095,7 +1094,6 @@
 
 .project-img {
   width: 100%;
-  height: 294px;
 }
 
 .project-titel {
@@ -1141,6 +1139,7 @@
   padding-left: 24px;
   padding-right: 24px;
   margin: 0;
+  font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -1149,6 +1148,20 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 400px) {
+  .project-text {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .project-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.16;
+  }
 }
 
 .project-item:hover .project-text {
@@ -1228,6 +1241,12 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 400px) {
+  .modal-form {
+    padding: 20px;
+  }
+}
+
 .modal-form input {
   outline: none;
   transition-property: all;
@@ -1295,9 +1314,21 @@
   margin-bottom: 28px;
 }
 
+@media screen and (max-width: 400px) {
+  .modal-form-input-wrapper {
+    margin-bottom: 14px;
+  }
+}
+
 .modal-form-comment-wrapper {
   position: relative;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .modal-form-comment-wrapper {
+    margin-bottom: 10px;
+  }
 }
 
 .modal-label {

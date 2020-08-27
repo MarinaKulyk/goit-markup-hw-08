@@ -44,7 +44,9 @@
     padding: 40px;
     display: flex;
     flex-direction: column;
-    
+    @media screen and (max-width: 400px) {
+     padding: 20px;
+      }
 input {
     outline: none;
      @extend %modal-input-textarea;
@@ -89,10 +91,16 @@ cursor: pointer;
 .modal-form-input-wrapper {
     position: relative;
     margin-bottom: 28px;
+@media screen and (max-width: 400px) {
+    margin-bottom: 14px;
+      }
 }
 .modal-form-comment-wrapper {
     position: relative;
     margin-bottom: 20px;
+    @media screen and (max-width: 400px) {
+    margin-bottom: 10px;
+      }
 }
 .modal-label {
     @extend %modal-coment-label;
