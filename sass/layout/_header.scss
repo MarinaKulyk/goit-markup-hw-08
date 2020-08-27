@@ -27,6 +27,7 @@
          
          scroll-padding-right: auto;
          position: absolute;
+         z-index: 1;
          top: 100%;
          left: 0;
          width: 100%;
@@ -36,6 +37,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    
 }
 }
 .nav {
